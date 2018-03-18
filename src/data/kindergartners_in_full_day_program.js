@@ -4158,7 +4158,7 @@ module.exports = {
   {
     "Location": "DENVER COUNTY 1",
     "TimeFrame": 2009,
-    "DataFormat": "Percent",
+    "DataFormat": "Percentsss",
     "stats": 0.93
   },
   {
