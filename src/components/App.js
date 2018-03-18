@@ -114,8 +114,7 @@ class App extends Component {
     return (
       <div>
         <Header 
-          search={this.handleSearch}
-          currentData={this.state.currentDataTitle}/>
+          search={this.handleSearch} />
         {this.state.districtRepository && 
           <Main
             title={this.state.currentDataTitle} 

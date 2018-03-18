@@ -29,4 +29,18 @@ describe('Nav', () => {
     expect(wrapper.state().search).toEqual(mockEvent.target.value);
     expect(wrapper.state().search).toEqual('example');
   });
+
+  it('should reset the state on method clearSearch', () => {
+    const mockSearch = jest.fn();
+    const mockEvent = {
+      preventDefault: jest.fn(),
+      target: {value: 'hello'}
+    };
+    const wrapper = shallow(
+      <Nav search={mockSearch} />
+    );
+    wrapper.instance().searchInput(mockEvent);
+    wrapper.instance().clearSearch(mockEvent);
+    expect(wrapper.state().search).toEqual('');
+  });
 });
