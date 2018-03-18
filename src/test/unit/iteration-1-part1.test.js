@@ -64,7 +64,7 @@ describe('DistrictRepository iteration 1 - part 1', () =>  {
       "2014": 1
     };
 
-    expect(academy.data).toEqual(result);
+    expect(academy.stats).toEqual(result);
   });
 
 });

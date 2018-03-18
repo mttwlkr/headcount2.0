@@ -7,10 +7,10 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Card
     info={
         Object {
-            "data": Object {
+            "location": "Denver",
+            "stats": Object {
               "2006": 0.85,
             },
-            "location": "Denver",
           }
     }
 />,
@@ -39,7 +39,6 @@ ShallowWrapper {
           <li
                     className="over-fifty"
           >
-
                     <span
                               className="year"
                     >
@@ -95,7 +94,6 @@ ShallowWrapper {
             <li
               className="over-fifty"
 >
-
               <span
                             className="year"
               >

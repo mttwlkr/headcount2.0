@@ -51,19 +51,35 @@ describe('Comparison Card', () => {
   });
 
   it('should destructure the props keys to set Location', () => {
-    const comparisonCard = {
+    const mockComparisonCard = {
       COLORADO: 0.53, 
       'ACADEMY 20': 0.407, 
       compared: 1.302
     };
     const clearedComparison = jest.fn();
     const wrapper = mount(<ComparisonCard 
-      comparisonCard={comparisonCard} 
+      comparisonCard={mockComparisonCard} 
       clearedComparison={clearedComparison}
     />);
-    const [cardALocation, cardBLocation] = Object.keys(comparisonCard);
+    const [cardALocation, cardBLocation] = Object.keys(mockComparisonCard);
     expect(wrapper).toBeDefined();  
     expect(cardALocation).toEqual('COLORADO');
     expect(cardBLocation).toEqual('ACADEMY 20');
+  });
+
+  it('should run clearedComparison prop on button click', () => {
+    const mockClearedComparison = jest.fn();
+    const mockComparisonCard = {
+      COLORADO: 0.53,
+      'ACADEMY 20': 0.408,
+      compared: 1.302
+    };
+    const wrapper = mount(
+      <ComparisonCard
+        comparisonCard={mockComparisonCard}
+        clearedComparison={mockClearedComparison} />
+    );
+    wrapper.find('button').simulate('click');
+    expect(mockClearedComparison).toHaveBeenCalled();
   });
 });

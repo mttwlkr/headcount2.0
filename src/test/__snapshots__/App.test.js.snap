@@ -19,7 +19,6 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Header
-          currentData="Kindergartners in full day program"
           search={[Function]}
 />,
         <Main
@@ -3119,7 +3118,6 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "currentData": "Kindergartners in full day program",
           "search": [Function],
         },
         "ref": null,
@@ -6231,7 +6229,6 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Header
-            currentData="Kindergartners in full day program"
             search={[Function]}
 />,
           <Main
@@ -9331,7 +9328,6 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "currentData": "Kindergartners in full day program",
             "search": [Function],
           },
           "ref": null,

@@ -24,4 +24,14 @@ describe('Card', () => {
     expect(wrapper1.find('li').props().className).toEqual('over-fifty');
     expect(wrapper2.find('li').props().className).toEqual('under-fifty');  
   });
+
+  it('should run the prop handleComparison on click', () => {
+    const mockHandleComparison = jest.fn();
+    const info = {location: 'Denver', stats: {'2006': .85 }};
+    const wrapper =  mount(
+      <Card info={info} handleComparison={mockHandleComparison} />
+    );
+    wrapper.simulate('click');
+    expect(mockHandleComparison).toHaveBeenCalled();
+  });
 });

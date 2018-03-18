@@ -148,7 +148,6 @@ describe('App', () => {
     const answer = wrapper.instance().fetchCurrentState('ACADEMY 20');
     expect(answer.locationToCompare).toEqual(location1);
     expect(answer.comparisonArray).toEqual([location1]);
-    expect(typeof answer.compareDistrictAverages).toBe('function');
     expect(answer.newRepositoryState).toEqual(expected);
   });
 });

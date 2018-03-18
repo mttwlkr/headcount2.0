@@ -8,16 +8,16 @@ ShallowWrapper {
     cards={
         Array [
             Object {
-              "data": Object {
+              "location": "Denver",
+              "stats": Object {
                 "2006": 0.098,
               },
-              "location": "Denver",
             },
             Object {
-              "data": Object {
+              "location": "Golden",
+              "stats": Object {
                 "2006": 0.848,
               },
-              "location": "Golden",
             },
           ]
     }
@@ -42,10 +42,10 @@ ShallowWrapper {
           handleComparison={[Function]}
           info={
                     Object {
-                              "data": Object {
+                              "location": "Denver",
+                              "stats": Object {
                                 "2006": 0.098,
                               },
-                              "location": "Denver",
                             }
           }
 />,
@@ -57,10 +57,10 @@ ShallowWrapper {
           handleComparison={[Function]}
           info={
                     Object {
-                              "data": Object {
+                              "location": "Golden",
+                              "stats": Object {
                                 "2006": 0.848,
                               },
-                              "location": "Golden",
                             }
           }
 />,
@@ -76,10 +76,10 @@ ShallowWrapper {
         "props": Object {
           "handleComparison": [Function],
           "info": Object {
-            "data": Object {
+            "location": "Denver",
+            "stats": Object {
               "2006": 0.098,
             },
-            "location": "Denver",
           },
         },
         "ref": null,
@@ -105,10 +105,10 @@ ShallowWrapper {
         "props": Object {
           "handleComparison": [Function],
           "info": Object {
-            "data": Object {
+            "location": "Golden",
+            "stats": Object {
               "2006": 0.848,
             },
-            "location": "Golden",
           },
         },
         "ref": null,
@@ -129,10 +129,10 @@ ShallowWrapper {
             handleComparison={[Function]}
             info={
                         Object {
-                                    "data": Object {
+                                    "location": "Denver",
+                                    "stats": Object {
                                       "2006": 0.098,
                                     },
-                                    "location": "Denver",
                                   }
             }
 />,
@@ -144,10 +144,10 @@ ShallowWrapper {
             handleComparison={[Function]}
             info={
                         Object {
-                                    "data": Object {
+                                    "location": "Golden",
+                                    "stats": Object {
                                       "2006": 0.848,
                                     },
-                                    "location": "Golden",
                                   }
             }
 />,
@@ -163,10 +163,10 @@ ShallowWrapper {
           "props": Object {
             "handleComparison": [Function],
             "info": Object {
-              "data": Object {
+              "location": "Denver",
+              "stats": Object {
                 "2006": 0.098,
               },
-              "location": "Denver",
             },
           },
           "ref": null,
@@ -192,10 +192,10 @@ ShallowWrapper {
           "props": Object {
             "handleComparison": [Function],
             "info": Object {
-              "data": Object {
+              "location": "Golden",
+              "stats": Object {
                 "2006": 0.848,
               },
-              "location": "Golden",
             },
           },
           "ref": null,
